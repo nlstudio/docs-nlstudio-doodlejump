@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>需求分析 · Docs - Doodle Jump</title>
+        <title>前端 · Docs - Doodle Jump</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="2-主要数据结构.html" />
+    <link rel="next" href="3-3-后端.html" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="3-1-整体设计.html" />
     
 
     </head>
@@ -104,7 +104,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="1-需求分析.html">
+        <li class="chapter " data-level="1.2" data-path="1-需求分析.html">
             
                 <a href="1-需求分析.html">
             
@@ -165,7 +165,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="3-2-前端.html">
+        <li class="chapter active" data-level="1.4.2" data-path="3-2-前端.html">
             
                 <a href="3-2-前端.html">
             
@@ -296,7 +296,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >需求分析</a>
+        <a href="." >前端</a>
     </h1>
 </div>
 
@@ -311,18 +311,23 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x9700;&#x6C42;&#x5206;&#x6790;">&#x9700;&#x6C42;&#x5206;&#x6790;</h1>
-<p>&#x672C;&#x8282;&#x5C06;&#x53D9;&#x8FF0;&#x9879;&#x76EE;&#x5E94;&#x5B9E;&#x73B0;&#x7684;&#x76EE;&#x6807;&#x53CA;&#x9700;&#x6C42;&#x3002;</p>
-<h2 id="&#x529F;&#x80FD;&#x5206;&#x6790;">&#x529F;&#x80FD;&#x5206;&#x6790;</h2>
-<ul>
-<li>&#x5355;&#x673A;&#x6E38;&#x620F;</li>
-<li>&#x53EF;&#x9AD8;&#x5EA6;&#x5B9A;&#x5236;</li>
-</ul>
-<h2 id="&#x6027;&#x80FD;&#x5206;&#x6790;">&#x6027;&#x80FD;&#x5206;&#x6790;</h2>
-<ul>
-<li>&#x753B;&#x9762;&#x6D41;&#x7545;&#xFF0C;&#x4E0D;&#x95EA;&#x5C4F;</li>
-<li>&#x968F;&#x673A;&#x751F;&#x6210;&#x7684;&#x3001;&#x65E0;&#x9650;&#x957F;&#x7684;&#x5730;&#x56FE;</li>
-</ul>
+                                <h1 id="&#x524D;&#x7AEF;">&#x524D;&#x7AEF;</h1>
+<p>&#x524D;&#x7AEF;&#x8D1F;&#x8D23;&#x76F4;&#x63A5;&#x4E0E;&#x7528;&#x6237;&#x4EA4;&#x4E92;&#x3002;</p>
+<h2 id="&#x83B7;&#x53D6;&#x8F93;&#x5165;">&#x83B7;&#x53D6;&#x8F93;&#x5165;</h2>
+<pre><code class="lang-C"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">get_key</span><span class="hljs-params">()</span>
+</span></code></pre>
+<h2 id="&#x6E32;&#x67D3;">&#x6E32;&#x67D3;</h2>
+<p><code>&#x6E32;&#x67D3;</code>&#x662F;&#x5C06;&#x540E;&#x7AEF;&#x5904;&#x7406;&#x597D;&#x7684;&#x6570;&#x636E;&#x4EE5;&#x5F62;&#x8C61;&#x5316;&#x7684;&#x65B9;&#x5F0F;&#x8F93;&#x51FA;&#x5230;&#x4E8C;&#x7EF4;&#x5B57;&#x7B26;&#x6570;&#x7EC4;&#x4E2D;&#xFF0C;&#x4E3A;&#x5176;&#x540E;<code>&#x6253;&#x5370;&#x8F93;&#x51FA;&#x5230;&#x5C4F;&#x5E55;</code>&#x670D;&#x52A1;&#x3002;</p>
+<h3 id="&#x6E32;&#x67D3;&#x8DF3;&#x677F;">&#x6E32;&#x67D3;&#x8DF3;&#x677F;</h3>
+<pre><code class="lang-C"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">render_board</span><span class="hljs-params">(<span class="hljs-keyword">char</span>* <span class="hljs-built_in">map</span>, <span class="hljs-keyword">struct</span> board* board_HEAD, <span class="hljs-keyword">struct</span> setting* setting)</span>
+</span></code></pre>
+<h3 id="&#x6E32;&#x67D3;&#x73A9;&#x5BB6;">&#x6E32;&#x67D3;&#x73A9;&#x5BB6;</h3>
+<pre><code class="lang-C"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">render_player</span><span class="hljs-params">(<span class="hljs-keyword">char</span>* <span class="hljs-built_in">map</span>, <span class="hljs-keyword">struct</span> player* player, <span class="hljs-keyword">struct</span> setting* setting)</span>
+</span></code></pre>
+<h2 id="&#x6253;&#x5370;">&#x6253;&#x5370;</h2>
+<p><code>&#x6253;&#x5370;</code> &#x662F;&#x5C06;&#x6E32;&#x67D3;&#x5B8C;&#x6210;&#x7684;&#x5B57;&#x7B26;&#x6570;&#x7EC4;&#x6253;&#x5370;&#x8F93;&#x51FA;&#x5230;&#x5C4F;&#x5E55;&#x4E0A;&#x3002;</p>
+<pre><code class="lang-C"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print_map</span><span class="hljs-params">(<span class="hljs-keyword">char</span>* <span class="hljs-built_in">map</span>, <span class="hljs-keyword">struct</span> setting* setting)</span>
+</span></code></pre>
 
                                 
                                 </section>
@@ -350,12 +355,12 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 项目简介">
+                <a href="3-1-整体设计.html" class="navigation navigation-prev " aria-label="Previous page: 整体设计">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="2-主要数据结构.html" class="navigation navigation-next " aria-label="Next page: 主要数据结构">
+                <a href="3-3-后端.html" class="navigation navigation-next " aria-label="Next page: 后端">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -366,7 +371,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"需求分析","level":"1.2","depth":1,"next":{"title":"主要数据结构","level":"1.3","depth":1,"path":"2-主要数据结构.md","ref":"2-主要数据结构.md","articles":[]},"previous":{"title":"项目简介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"Nameless Studio","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Docs - Doodle Jump","language":"zh-hans","gitbook":"*","description":"The Documentation of nlstudio/doodleJump"},"file":{"path":"1-需求分析.md","mtime":"2019-12-05T05:10:20.074Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-06T04:37:33.448Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"前端","level":"1.4.2","depth":2,"next":{"title":"后端","level":"1.4.3","depth":2,"path":"3-3-后端.md","ref":"3-3-后端.md","articles":[]},"previous":{"title":"整体设计","level":"1.4.1","depth":2,"path":"3-1-整体设计.md","ref":"3-1-整体设计.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"Nameless Studio","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Docs - Doodle Jump","language":"zh-hans","gitbook":"*","description":"The Documentation of nlstudio/doodleJump"},"file":{"path":"3-2-前端.md","mtime":"2019-12-06T04:30:42.427Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-06T04:37:33.448Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
